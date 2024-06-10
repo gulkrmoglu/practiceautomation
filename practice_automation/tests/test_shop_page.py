@@ -19,8 +19,12 @@ class TestShopPage:
         yield
         self.driver.quit()
 
-    def test_home_page(self):
-        self.home_page = ShopPage(self.driver)
-        self.home_page.home_page_scroll()
-        self.home_page.home_page_shop()
-        self.home_page.home_page_product_image()
+    def test_shop_page(self):
+        self.shop_page = ShopPage(self.driver)
+        self.shop_page.shop_scroll()
+        self.shop_page.shop()
+        self.shop_page.shop_product_image()
+        self.shop_page.shop_android()
+        self.shop_page.shop_html()
+        self.shop_page.shop_javascript()
+        self.shop_page.shop_selenium()
