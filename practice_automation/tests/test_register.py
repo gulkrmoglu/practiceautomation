@@ -23,3 +23,6 @@ class TestRegister:
         self.register = Register(self.driver)
         self.register.character_register()
         self.register.valid_register()
+        self.register.invalid_register()
+        self.register.empty_email_register()
+        self.register.empty_password_register()

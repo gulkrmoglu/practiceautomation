@@ -17,3 +17,7 @@ PASSWORD=(By.ID,"reg_password")
 REGISTER=(By.NAME,"register")
 ALERT_MESSAGE=(By.CSS_SELECTOR,"#customer_login > div.u-column2.col-2 > form > p:nth-child(2) > div")
 ALERTMESSAGE="The password should be at least seven characters long. To make it stronger, use upper and lower case letters, numbers and symbols like ! ' ? $ % ^ & )."
+ERRORMESSAGE=(By.CSS_SELECTOR,"#page-36 > div > div.woocommerce > ul > li")
+ERROR_MESSAGE="Please provide a valid email address."
+PASSWORDALERT=(By.CSS_SELECTOR,"#page-36 > div > div.woocommerce > ul > li")
+PASSWORD_ALERT="Please enter an account password."
