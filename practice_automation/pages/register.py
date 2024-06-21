@@ -1,18 +1,12 @@
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as ec
 from practice_automation.pages.constants.globalConstants import *
+from practice_automation.pages.PageBase import PageBase
 import time
 
-class Register:
+class Register(PageBase):
 
     def __init__(self, driver):
-        self.driver = driver
-
-    def clickElementByJS(self,element):
-        self.driver.execute_script("arguments[0].click();", element)  
-
-    def WaitForElementVisible(self,locator,timeout=40):
-        return WebDriverWait(self.driver,timeout).until(ec.visibility_of_element_located(locator))   
+        super().__init__(driver)
+        self.driver = driver     
     
     
     def character_register(self):

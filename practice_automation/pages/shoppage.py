@@ -1,17 +1,11 @@
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as ec
 from practice_automation.pages.constants.globalConstants import *
+from practice_automation.pages.PageBase import PageBase
 
-class ShopPage:
+class ShopPage(PageBase):
 
     def __init__(self, driver):
+        super().__init__(driver)
         self.driver = driver
-
-    def clickElementByJS(self,element):
-        self.driver.execute_script("arguments[0].click();", element)  
-
-    def WaitForElementVisible(self,locator,timeout=40):
-        return WebDriverWait(self.driver,timeout).until(ec.visibility_of_element_located(locator))   
 
     def shop_scroll(self):
         shop=self.WaitForElementVisible(SHOP_LINK)

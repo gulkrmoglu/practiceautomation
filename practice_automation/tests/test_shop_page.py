@@ -3,7 +3,7 @@ import pytest
 from practice_automation.pages.shoppage import ShopPage
 from practice_automation.pages.constants.globalConstants import *
 
-
+@pytest.mark.usefixtures("setup")
 class TestShopPage:
 
     @pytest.fixture(autouse=True)

@@ -3,7 +3,7 @@ import pytest
 from practice_automation.pages.register import Register
 from practice_automation.pages.constants.globalConstants import *
 
-
+@pytest.mark.usefixtures("setup")
 class TestRegister:
 
     @pytest.fixture(autouse=True)
