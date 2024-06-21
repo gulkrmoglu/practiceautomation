@@ -6,9 +6,8 @@ class Register(PageBase):
 
     def __init__(self, driver):
         super().__init__(driver)
-        self.driver = driver     
-    
-    
+        self.driver = driver    
+       
     def character_register(self):
         account=self.WaitForElementVisible(ACCOUNT)
         account.click()
