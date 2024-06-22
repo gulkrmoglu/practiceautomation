@@ -16,3 +16,4 @@ class TestRegister:
         self.register.invalid_register()
         self.register.empty_email_register()
         self.register.empty_password_register()
+

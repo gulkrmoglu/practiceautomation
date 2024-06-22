@@ -11,3 +11,4 @@ class PageBase:
     
     def clickElementByJS(self,element):
         self.driver.execute_script("arguments[0].click();", element)  
+
